@@ -1,16 +1,63 @@
-.background {
-    width: 500px;
-    height: 500px;
-    background: auto;
-    background-color: auto;
-    background-image: auto;
-    background-position: auto;
-    background-repeat: auto;
-    background-size: auto;
-    background-clip: auto;
-    background-position-x: auto;
-    background-position-y: auto;
-    background-attachment: auto;
-    background-origin: auto;
-    background-blend-mode: auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#202,#020);
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    padding: 10px;
+}
+
+.container {
+    border: solid 5px black;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+table {
+    color: #fff;
+    font-size: 15px;
+    table-layout: fixed;
+}
+
+thead {
+    background: #090;
+    cursor: pointer;
+}
+
+th {
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 10%;
+    color: black;
+    font-weight: 900;
+}
+
+td {
+    padding: 15px;
+    border: solid 3px #000;
+    border-radius: 10%;
+}
+
+tbody td:hover {   
+    background: black;
+    cursor: pointer;
+}
+
+tfoot td:hover {   
+    background: #090;
+    cursor: pointer;
 }
